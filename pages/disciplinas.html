@@ -15,71 +15,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!--CSS MAIN-->
-    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Disciplinas</title>
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <div class="logo_div">
-             <a href="../index.html"> <img class="logo" src="../img/Logo.png" alt="Logo"> </a>
-        </div>
-
-        <!-- Barra de navegacion -->
-        <nav id="nav_bar">
-                    <ul>
-                        <li class="lista_nav"> <a href="./sede.html">Sede</a> </li>
-                        <li class="lista_nav"> <a href="./disciplinas.html">Disciplinas</a> </li>
-                        <li class="lista_nav"> <a href="./horarios.html">Horarios</a> </li>
-                        <li class="lista_nav"> <a href="./tienda.html">Tienda</a> </li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> <img class="logo" src="../img/Logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./horarios.html">Horarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./disciplinas.html">Disciplinas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sede
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./sede.html">Villa Del Parque</a></li>
                     </ul>
-        </nav>
-
-        <div id="hamburger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile_menu">
-                <li class="lista_nav"> <a href="./sede.html">Sede</a> </li>
-                        <li class="lista_nav"> <a href="./disciplinas.html">Disciplinas</a> </li>
-                        <li class="lista_nav"> <a href="./horarios.html">Horarios</a> </li>
-                        <li class="lista_nav"> <a href="./tienda.html">Tienda</a> </li>
-            </ul>
-        </div>
-
-        <div class="facebook_div">
-            <img class="facebook" src="../img/facebook.png" alt="Facebook">
-        </div>
-        <div class="instagram_div">
-            <img class="instagram" src="../img/instagram.png" alt="Instagram">
-        </div>
+                    <li><img class="facebook" src="../img/facebook.png" alt="Facebook"></li>
+                    <li><img class="instagram" src="../img/instagram.png" alt="Instagram"></li>
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <!--JAVASCRIPT-->
-    <script src="../script/index.js"></script>
     
     <main>
          
          <section>
             <article>
                 <img class="disciplinagym" src="../img/Nataciongym.jpg" alt="Natacion">
-                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum doloribus veniam illo minima dolores eaque laborum omnis, sed enim odio velit dolorem cum facilis suscipit pariatur. Dolores explicabo animi quo.</div>
+                <div class="disciplinas_text">En nuestro centro deportivo no solo contamos con una amplia variedad de clases y equipos de alta calidad, sino que también ofrecemos una experiencia acuática única en nuestra piscina olímpica.
+                    Si estás buscando una forma divertida, refrescante y de bajo impacto para mejorar tu estado físico, la natación es perfecta para ti. Nuestros instructores altamente capacitados ofrecen sesiones de natación para personas de todas las edades y niveles de habilidad.
+                    ¿Quieres mejorar tu técnica de nado? En nuestro gimnasio, contamos con instructores experimentados que pueden ayudarte a mejorar tus habilidades acuáticas y perfeccionar tu técnica. Desde principiantes hasta avanzados, ofrecemos clases para todos los niveles para ayudarte a alcanzar tus objetivos de acondicionamiento físico.
+                    Además, la natación es una excelente manera de reducir el estrés y mejorar el bienestar mental. Sumérgete en nuestras piscinas y permite que la tensión desaparezca en un ambiente relajado y sereno.
+                    Visítanos en nuestro gimnasio y descubre cómo la natación puede ser una parte emocionante y desafiante de tu rutina de acondicionamiento físico. ¡Nos vemos pronto en la piscina!</div>
             </article>
         </section>
 
         <section>
             <article>
                 <img class="disciplinagym" src="../img/Boxeogym.jpg" alt="Boxeo">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae ad laborum soluta eos libero velit nobis quod totam, corporis commodi iusto debitis accusamus voluptate sapiente veritatis non id quam!</div>
+                <div class="disciplinas_text">Si estás buscando un deporte emocionante y desafiante para mejorar tu estado físico y aprender habilidades útiles de defensa personal, el boxeo es la elección perfecta. En nuestro centro deportivo, ofrecemos clases de boxeo impartidas por entrenadores experimentados y apasionados.
+                    No importa si eres un principiante o un boxeador experimentado, nuestras clases de boxeo son para personas de todos los niveles. Con ejercicios de entrenamiento de fuerza y resistencia, así como ejercicios de técnica de puñetazos y golpes, nuestras sesiones están diseñadas para mejorar tu condición física y tu habilidad en el deporte.
+                    Además, el boxeo es una excelente manera de reducir el estrés y mejorar la confianza en ti mismo. Nuestros entrenadores se aseguran de que te sientas en un ambiente seguro y respetuoso, donde puedas superar tus límites y aprender nuevas habilidades.   
+                    En nuestro gimnasio, no solo entrenamos a boxeadores, también construimos comunidad. Únete a un grupo de personas apasionadas por el boxeo y crea relaciones duraderas mientras mejoras tu condición física y tu habilidad en el deporte.
+                    Así que si estás buscando un deporte emocionante y desafiante que te permita mejorar tu físico y aprender habilidades útiles de defensa personal, ¡visítanos para una sesión de entrenamiento de boxeo!</div>
             </article>
         </section> 
 
         <section>
             <article>
                 <img class="disciplinagym" src="../img/Crossfitgym4.jpg" alt="Crossfit">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae ad laborum soluta eos libero velit nobis quod totam, corporis commodi iusto debitis accusamus voluptate sapiente veritatis non id quam!</div>
+                <div class="disciplinas_text">Si estás buscando un deporte desafiante que ponga a prueba tu resistencia, fuerza, velocidad y agilidad, ¡el CrossFit es para ti!
+                    Nuestro equipo de entrenadores altamente capacitados está listo para guiarte a través de los entrenamientos de CrossFit, y brindarte las herramientas que necesitas para alcanzar tus objetivos.
+                    En Riro Sportivo, no solo nos enfocamos en el aspecto físico del CrossFit, sino también en la mentalidad que se necesita para este deporte. Desarrollarás la capacidad de desafiarte a ti mismo, superar tus límites y trabajar en equipo.
+                    Ofrecemos una amplia variedad de clases de CrossFit para todos los niveles, desde principiantes hasta avanzados. Nuestro objetivo es ayudarte a mejorar en cada aspecto del fitness, y a convertirte en la mejor versión de ti mismo.
+                    Así que ven y disfruta de la experiencia de entrenamiento de CrossFit en Riro Sportivo. ¡Te esperamos!</div>
             </article>
         </section> 
 

@@ -21,71 +21,67 @@
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <div class="logo_div">
-             <a href="../index.html"> <img class="logo" src="../img/Logo.png" alt="Logo"> </a>
-        </div>
-
-        <!-- Barra de navegacion -->
-        <nav id="nav_bar">
-                    <ul>
-                        <li class="lista_nav"> <a href="./sede.html">Sede</a> </li>
-                        <li class="lista_nav"> <a href="./disciplinas.html">Disciplinas</a> </li>
-                        <li class="lista_nav"> <a href="./horarios.html">Horarios</a> </li>
-                        <li class="lista_nav"> <a href="./tienda.html">Tienda</a> </li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> <img class="logo" src="../img/Logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./horarios.html">Horarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./disciplinas.html">Disciplinas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sede
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./sede.html">Villa Del Parque</a></li>
                     </ul>
-        </nav>
-
-        <div id="hamburger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile_menu">
-                <li class="lista_nav"> <a href="./sede.html">Sede</a> </li>
-                        <li class="lista_nav"> <a href="./disciplinas.html">Disciplinas</a> </li>
-                        <li class="lista_nav"> <a href="./horarios.html">Horarios</a> </li>
-                        <li class="lista_nav"> <a href="./tienda.html">Tienda</a> </li>
-            </ul>
-        </div>
-
-        <div class="facebook_div">
-            <img class="facebook" src="../img/facebook.png" alt="Facebook">
-        </div>
-        <div class="instagram_div">
-            <img class="instagram" src="../img/instagram.png" alt="Instagram">
-        </div>
+                    <li><img class="facebook" src="../img/facebook.png" alt="Facebook"></li>
+                    <li><img class="instagram" src="../img/instagram.png" alt="Instagram"></li>
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <!--JAVASCRIPT-->
-    <script src="../script/index.js"></script>
 
     <main>
-        <div class="form-container">
-            <form>
-              <h2>Contactanos</h2>
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit">Send</button>
-            </form>
-            <img src="../img/Boxeogym.jpg" alt="Form image">
-          </div>
+      <div class="form-container">
+        <form>
+          <h2>Contactanos</h2>
+          <label for="name">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+    
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email...">
+    
+          <label for="subject">Sexo</label>
+          <select id="subject" name="subject">
+            <option value="general">...</option>
+            <option value="sales">Femenino</option>
+            <option value="support">Masculino</option>
+          </select>
+    
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="mensaje" placeholder="Excribe tu mensaje..."></textarea>
+    
+          <input type="submit" value="Submit">
+        </form>
+        <div class="image-container">
+          <img src="../img/Boxeogym.jpg" alt="imagen_form">
+        </div>
+      </div>
     </main>
-
-    <section>
-        <article>
-            <div></div>
-        </article>
-    </section>
 
     <!--Inicio del Footer-->
     <footer>
